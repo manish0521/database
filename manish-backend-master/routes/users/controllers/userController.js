@@ -9,9 +9,9 @@ const nodemailer = require("nodemailer");
 const crypto = require('crypto');
 
 cloudinary.config({
-  cloud_name: process.env.CLOUD_NAME,
-  api_key: process.env.API_KEY,
-  api_secret: process.env.API_SECRET
+  cloud_name: process.env.CLOUDINARY_NAME,
+  api_key: process.env.CLOUDINARY_API_KEY,
+  api_secret: process.env.CLOUDINARY_API_SECRET
 });
 
 async function cloundinaryUpload(url) {
@@ -212,14 +212,14 @@ module.exports = {
     var transporter = nodemailer.createTransport({
       service: 'gmail',
       auth: {
-        user: 'camopacman@gmail.com',
-        pass: 'i@mamaster'
+        user: 'manishsingh0521@gmail.com',
+        pass: 'manish21'
       }
     })
 
     var mailOptions = {
       from: req.body.email,
-      to: 'paknchu@gmail.com',
+      to: 'manishsingh0521@gmail.com',
       subject: req.body.subject,
       html: ` 
            From Email:  ${req.body.email}

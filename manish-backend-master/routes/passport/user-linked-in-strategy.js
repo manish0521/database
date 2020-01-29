@@ -1,8 +1,8 @@
 var LinkedInStrategy = require('passport-linkedin-oauth2').Strategy;
 
 let linkedInPassport = new LinkedInStrategy({
-    clientID: '77zphwi0a3k2at',
-    clientSecret: 'oPxsjEM5uEQXOBIn',
+    clientID: '77mlvakqybafn3',
+    clientSecret: 'voDyEQ7Z8qOycWMz',
     callbackURL: process.env.NODE_ENV !== 'development' ? '' : "http://127.0.0.1:3001/api/users/linkedin/auth/callback",
     scope: ['r_liteprofile', 'r_emailaddress']
   }, function(accessToken, refreshToken, profile, done) {
