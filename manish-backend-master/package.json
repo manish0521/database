@@ -17,7 +17,7 @@
     "express": "~4.16.0",
     "formidable": "^1.2.1",
     "http-errors": "~1.6.2",
-    "jsonwebtoken": "^8.5.1",
+    "jsonwebtoken": "^9.0.0",
     "jwt-decode": "^2.2.0",
     "moment": "^2.24.0",
     "mongoose": "^5.8.4",
